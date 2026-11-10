@@ -1,0 +1,7 @@
+#abc-diagnosis-root .range-guide-wrap{position:relative;padding-bottom:28px}
+#abc-diagnosis-root .range-guide-hand{position:absolute;top:30px;left:var(--range-guide-left,50%);width:36px;margin-left:-18px;height:36px;line-height:36px;text-align:center;font-size:30px;pointer-events:none;user-select:none;animation:abc-range-swipe 3.8s ease-in-out infinite;animation-play-state:paused;filter:drop-shadow(0 1px 1px #63492026)}
+#abc-diagnosis-root [data-range-guide-state="running"] .range-guide-hand{animation-play-state:running}
+#abc-diagnosis-root [data-range-guide-touched="1"] .range-guide-hand{opacity:0;animation:none}
+#abc-diagnosis-root [data-range-guide-label]{font-weight:700;color:#765523}
+@keyframes abc-range-swipe{0%,42%,100%{transform:translateX(0)}8%,26%{transform:translateX(-14px)}17%,35%{transform:translateX(14px)}}
+@media(prefers-reduced-motion:reduce){#abc-diagnosis-root .range-guide-hand{animation:none!important;transform:none}}
